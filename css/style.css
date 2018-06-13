@@ -1,9 +1,18 @@
+#thumbnails{
+position: absolute;
+margin-left:26.5%;
+margin-top:22%;
+}
+#thumbnails img{
+  width:15%;
+  height:15%;
+  margin-left:10%;
+  cursor:pointer;
+}
 #slider img{
   width:20%;
   position: absolute;
-  height:auto;
-left:40%;
-top:10%;
+margin-left:40%;
   transition:1s;
 opacity:0;
 }
