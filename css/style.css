@@ -1,0 +1,13 @@
+#slider img{
+  width:20%;
+  position: absolute;
+  height:auto;
+left:40%;
+top:10%;
+  transition:1s;
+opacity:0;
+}
+#slider .active{
+  opacity:1;
+  transition:3s;
+}
