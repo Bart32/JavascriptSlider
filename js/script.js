@@ -17,20 +17,23 @@ window.onload = function()
 
 
 
-
-
   var imagesElements = sliderDiv.getElementsByTagName('img');
   var thumbnailsElements = thumbnailsDiv.getElementsByTagName('img');
 
   imagesElements[0].setAttribute("class", "active");
 
+
+
 // Slider
   var k = 0;
-  var sliderInterval = setInterval(function(){
+
+  function startSlider(){
     imagesElements[k % 3].setAttribute("class", " ");
     imagesElements[(k + 1) % 3].setAttribute("class", "active");
     k++;
-  },4500);
+  }
+
+  var sliderInterval = setInterval(startSlider,4500);
 
 
 // Thumbnails click function
@@ -42,11 +45,7 @@ window.onload = function()
           var index = Array.from(this.parentElement.children).indexOf(this); // Getting index of clicked thumbnail
           imagesElements[index].setAttribute("class", "active");
           k=index;
-          sliderInterval = setInterval(function(){ // Starting slider
-            imagesElements[k % 3].setAttribute("class", " ");
-            imagesElements[(k + 1) % 3].setAttribute("class", "active");
-            k++;
-          },4500);
+          sliderInterval = setInterval(startSlider,4500);
   });
  };
 };
