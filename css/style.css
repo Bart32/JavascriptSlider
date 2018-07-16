@@ -1,22 +1,25 @@
 #thumbnails{
 position: absolute;
-margin-left:26.5%;
-margin-top:22%;
+
+margin-top:300px;
+width:100%;
 }
 #thumbnails img{
-  width:15%;
-  height:15%;
-  margin-left:10%;
-  cursor:pointer;
+width:100px;
+margin-left:50px;
+ cursor:pointer;
 }
 #slider img{
-  width:20%;
-  position: absolute;
-margin-left:40%;
-  transition:1s;
+width:250px;
+position: absolute;
+transition:1s;
 opacity:0;
+margin-left: 124px;
 }
 #slider .active{
   opacity:1;
   transition:3s;
+}
+#sliderBox{
+  position: relative;
 }
