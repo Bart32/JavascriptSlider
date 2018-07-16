@@ -45,7 +45,6 @@ window.onload = function () {
       clearInterval(sliderInterval); // Stoping slider
       document.getElementsByClassName('active')[0].setAttribute("class", " "); // Removing actual 'active' class
       var index = Array.from(this.parentElement.children).indexOf(this); // Getting index of clicked thumbnail
-      alert(index);
       imagesElements[index].setAttribute("class", "active");
       k = index;
       sliderInterval = setInterval(startSlider, 4500);
